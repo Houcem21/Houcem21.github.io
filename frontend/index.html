@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
     <title>samdk</title>
 </head>
 <body>
@@ -18,27 +20,28 @@
     <main>
         <section id="home">
         <h1>I'm sam, I make stuff and this is my base.</h1>
+        <img src="./assets/homeavatar.png" alt="Home Avatar">
         </section>
         <section id="projects">
             <h2>These are some of my projects :</h2>
-            <div>
-                <h3>Quizz app</h3>
-                <a href="https://quizz-app-lilac-zeta.vercel.app/">live link</a>
-                <p>Trivia website</p>
-            </div>
-            <div>
-                <h3>Social media app</h3>
-                <a href="https://reiunctura.vercel.app/">live link</a>
-                <p>Cloning social media platforms</p>
-            </div>
-            <div>
-                <h3>AI magis</h3>
-                <a href="https://ai-magis.netlify.app/">live link</a>
-                <p>AI image generator</p>
-            </div>
+            <ul class="project-list">
+                <li>
+                    <h3>Quizz app</h3>
+                    <a href="https://quizz-app-lilac-zeta.vercel.app/">live link</a>
+                    <p>Trivia website</p>
+                </li>
+                <li>
+                    <h3>Social media app</h3>
+                    <a href="https://reiunctura.vercel.app/">live link</a>
+                    <p>Cloning social media platforms</p>
+                </li>
+                <li>
+                    <h3>AI magis</h3>
+                    <a href="https://ai-magis.netlify.app/">live link</a>
+                    <p>AI image generator</p>
+                </li>
+            </ul>
         </section>
-    </main>
-    <footer>
         <section id="contact">
             <h2>Contact Me</h2>
             <form action="mailto:sam.damak@proton.me" method="post" enctype="text/plain">
@@ -53,10 +56,13 @@
                 <br>
                 <input type="submit" value="Send">
             </form>
-            <h2>Social</h2>
+        </section>
+    </main>
+    <footer>
+        <div class="links">
             <a target="_blank" href="https://github.com/houcem21">github</a>
             <a target="_blank" href="https://discordapp.com/users/765335190784311337">discord</a>
-        </section>
+        </div>
         <p>© 2025 Sam</p>
     </footer>
     

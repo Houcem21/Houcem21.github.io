@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Basic CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ECDFCC;
+    --secondary-color: #697565;
+    --tertiary-color: #3C3D37;
+    --border-color: #D9D9D9;
+    --background-color: #1E201E;
+    --font-family: "Montserrat", serif;
+    --font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--primary-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+a:hover {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+/* Header CSS */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+header nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 1rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+ul li a:hover {
+    color: var(--primary-color);
+}
+ul li a:active {
+    color: var(--primary-color);
+}
+
+/* Main CSS */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+main section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.project-list li {
+    text-decoration: none;
+    list-style: none;
+}
+
+/* Footer CSS */
+footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: .5rem;
+    background-color: var(--tertiary-color);
+    color: var(--primary-color);
+}
+
+footer .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
