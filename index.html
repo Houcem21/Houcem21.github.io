@@ -20,31 +20,35 @@
     <main>
         <section id="home">
         <h1>I'm sam, I make stuff and this is my base.</h1>
-        <img src="./assets/homeavatar.png" alt="Home Avatar">
+        <img src="./assets/avatar-animation.gif" alt="Home Avatar">
         </section>
         <section id="projects">
-            <h2>These are some of my projects :</h2>
-            <ul class="project-list">
-                <li>
-                    <h3>Quizz app</h3>
-                    <a href="https://quizz-app-lilac-zeta.vercel.app/">live link</a>
-                    <p>Trivia website</p>
-                </li>
-                <li>
-                    <h3>Social media app</h3>
-                    <a href="https://reiunctura.vercel.app/">live link</a>
-                    <p>Cloning social media platforms</p>
-                </li>
-                <li>
-                    <h3>AI magis</h3>
-                    <a href="https://ai-magis.netlify.app/">live link</a>
-                    <p>AI image generator</p>
-                </li>
-            </ul>
+            <h2 class="projects-title">These are some of my projects :</h2>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <h3>Quizz app</h3>
+                        <a target="_blank" href="https://quizz-app-lilac-zeta.vercel.app/">live link</a>
+                        <p>Trivia website</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>Social media app</h3>
+                        <a target="_blank" href="https://reiunctura.vercel.app/">live link</a>
+                        <p>Cloning social media platforms</p>
+                    </div>
+                    <div class="carousel-item">
+                        <h3>AI magis</h3>
+                        <a target="_blank" href="https://ai-magis.netlify.app/">live link</a>
+                        <p>AI image generator</p>
+                    </div>
+                </div>
+                <button class="carousel-control prev" onclick="prevSlide()">&#10094;</button>
+                <button class="carousel-control next" onclick="nextSlide()">&#10095;</button>
+            </div>
         </section>
         <section id="contact">
             <h2>Contact Me</h2>
-            <form action="mailto:sam.damak@proton.me" method="post" enctype="text/plain">
+                <form action="mailto:sam.damak@proton.me" method="post" enctype="text/plain" class="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <br>
@@ -54,7 +58,7 @@
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
                 <br>
-                <input type="submit" value="Send">
+                <input type="submit" value="Send" class="submit-button">
             </form>
         </section>
     </main>
